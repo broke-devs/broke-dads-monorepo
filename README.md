@@ -1,8 +1,11 @@
 # Broke Dads
 
+Alpha social site for developers to create, assist, track and maintain projects.
+
 ## Database
 
 - ORM : Prisma
+- DB: Supabase (sandbox)
 
 ### Scripts
 

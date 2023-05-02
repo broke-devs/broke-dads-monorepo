@@ -14,10 +14,12 @@ jobs:
     environment:
       name: production
       url: https://github.com/broke-devs/broke-dads-monorepo
-      env: DATABASE_URL
-    # To use Remote Caching, uncomment the next lines and follow the steps below.
-    # env:
-    #  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+
+      # To use Remote Caching, uncomment the next lines and follow the steps below.
+      env:
+        #  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
     #  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
     #  TURBO_REMOTE_ONLY: true
 

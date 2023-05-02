@@ -2,6 +2,13 @@
 
 Alpha social site for developers to create, assist, track and maintain projects.
 
+# developer usage
+
+- download repo
+- run npm i
+- ensure you have turbo installed locally or globally
+- `turbo dev` -- dev server
+
 ## Database
 
 - ORM : Prisma

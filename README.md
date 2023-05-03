@@ -1,7 +1,39 @@
 # Broke Dads
 
-[![CI](https://github.com/broke-devs/broke-dads-monorepo/actions/workflows/ci.yml/badge.svg?event=status)](https://github.com/broke-devs/broke-dads-monorepo/actions/workflows/ci.yml)
-Alpha social site for developers to create, assist, track and maintain projects.
+## [![CI](https://github.com/broke-devs/broke-dads-monorepo/actions/workflows/ci.yml/badge.svg?event=status)](https://github.com/broke-devs/broke-dads-monorepo/actions/workflows/ci.yml)
+
+## Alpha social site for developers to create, assist, track and maintain projects.
+
+- Package Manager: npm
+
+---
+
+[View Documentation 📔]()
+
+# WorkSpaces (directories apps, service, packages)
+
+Each app and package you add to your monorepo will be inside its own workspace.
+
+# Installing Packages
+
+## Install a package in a workspace
+
+### `npm install <package> --workspace=<workspace>`
+
+- Example
+  👉 `npm install react --workspace=web`
+
+  ## Remove a package from a workspace
+
+  ### `npm uninstall <package> --workspace=<workspace>`
+
+  - Example 👉 `npm uninstall react --workspace=web`
+
+  ## Upgrade a package in a workspace
+
+  ### `npm update <package> --workspace=<workspace>`
+
+  - Example 👉 `npm update react --workspace=web`
 
 # developer usage
 

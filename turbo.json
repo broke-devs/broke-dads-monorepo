@@ -17,6 +17,7 @@
 
     },
     "build": {
+      "env": ["DATABASE_URL"],
       "dependsOn": ["^db:generate", "^build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },

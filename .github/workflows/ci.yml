@@ -1,4 +1,4 @@
-name: CI-Deployment
+name: CI
 
 on:
   push:
@@ -11,14 +11,7 @@ jobs:
     name: Build and Test
     timeout-minutes: 15
     runs-on: ubuntu-latest
-    environment:
-      name: production
-      url: https://github.com/broke-devs/broke-dads-monorepo
-
-      # To use Remote Caching, uncomment the next lines and follow the steps below.
-      env:
-        #  TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
-        DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    # To use Remote Caching, uncomment the next lines and follow the steps below.
 
     #  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
     #  TURBO_REMOTE_ONLY: true
@@ -39,6 +32,8 @@ jobs:
         run: npm install
 
       - name: Build
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: npm run build
 
       - name: Test

@@ -12,8 +12,7 @@ jobs:
     timeout-minutes: 15
     runs-on: ubuntu-latest
     # To use Remote Caching, uncomment the next lines and follow the steps below.
-      env:
-       DATABASE_URL: ${{ secrets.DATABASE_URL }}
+
     #  TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
     #  TURBO_REMOTE_ONLY: true
 
@@ -33,6 +32,8 @@ jobs:
         run: npm install
 
       - name: Build
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: npm run build
 
       - name: Test

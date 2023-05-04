@@ -9,11 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "database": "*",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui": "*",
-    "database": "*"
+    "ui": "*"
   },
   "engines": {
     "node": "^18.0.0"
@@ -23,6 +23,7 @@
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
     "eslint-config-custom": "*",
+    "next-transpile-modules": "^10.0.0",
     "tsconfig": "*",
     "typescript": "^4.5.3"
   }

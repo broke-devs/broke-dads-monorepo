@@ -1,6 +1,6 @@
 # Broke Dads
 
-## [![CI](https://github.com/broke-devs/broke-dads-monorepo/actions/workflows/ci.yml/badge.svg?event=status)](https://github.com/broke-devs/broke-dads-monorepo/actions/workflows/ci.yml)
+## [![CI](https://github.com/broke-devs/broke-dads-monorepo/actions/workflows/ci.yml/badge.svg)](https://github.com/broke-devs/broke-dads-monorepo/actions/workflows/ci.yml)
 
 ## Alpha social site for developers to create, assist, track and maintain projects.
 

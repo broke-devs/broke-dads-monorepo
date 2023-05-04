@@ -1,4 +1,4 @@
-import { Button } from "ui";
+import { Button } from "ui/Button";
 import { getAllPosts } from "../lib/db";
 
 export async function getStaticProps(context) {

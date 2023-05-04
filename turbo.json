@@ -2,8 +2,6 @@
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local"],
   "pipeline": {
-
-   
     "db:generate": {
       "cache": false
     },
@@ -14,17 +12,15 @@
       "dependsOn": ["^db:generate"],
       "cache": false,
       "persistent": true
-
     },
     "build": {
       "env": ["DATABASE_URL"],
       "dependsOn": ["^db:generate", "^build"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**", "!.next/cache/**", "storybook-static/**"]
     },
     "test": {
       "dependsOn": ["^build"]
     },
     "lint": {}
- 
   }
 }

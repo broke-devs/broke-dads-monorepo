@@ -1,6 +1,6 @@
 import { Button } from "ui/aurmor/Button";
 import { getAllPosts } from "../lib/db";
-import { ButtonRaw } from "ui";
+import { ButtonRaw } from "ui/aurmor/raw/ButtonRaw";
 
 export async function getStaticProps(context) {
   const posts = await getAllPosts();
@@ -16,7 +16,7 @@ export default function Web({ posts }) {
     <div>
       <h1>Web</h1>
       <Button label="My Button" color="red" />
-      <ButtonRaw />
+      <ButtonRaw label="New button Raw" />
       {posts ? (
         <ul>
           {posts.map((post) => (
